@@ -127,8 +127,8 @@ Before submitting, verify:
 
 ## Your Information
 
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
+**Name:** [ADESS PHIRI]
+**Student ID:** [2022088697]
 **Design Theme:** [Describe your portfolio theme/style]
 
 ### CSS Techniques Used
