@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <title>Portfolio - ADESS PHIRI</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="nav">
+        <nav class="nav container">
             <!-- TODO: Create navigation with links to each section
                  Requirements:
                  - Logo/site title
@@ -32,14 +32,24 @@
                  - Mobile-friendly (hamburger menu optional)
                  - Active state indication
             -->
+            <!-- logo-->
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+               <a href="#home">ADESS PHIRI</a> 
             </div>
+
+            <!--Mobile Toggle Button-->
+            <button class="nav__toggle" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            
+            <!--Navigation links-->
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"  class="nav_link active">Home</a></li>
+                <li><a href="#about"  class="nav_link">About</a></li>
+                <li><a href="#projects" class="nav_link">Projects</a></li>
+                <li><a href="#contact" class="nav_link">Contact</a></li>
             </ul>
         </nav>
     </header>
