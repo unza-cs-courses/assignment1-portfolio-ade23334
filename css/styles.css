@@ -21,38 +21,38 @@ DO NOT use CSS frameworks (Bootstrap, Tailwind, etc.)
    ============================================================ */
 :root {
     /* Colors - TODO: Customize your color palette */
-    --color-primary: /* Your primary color */;
-    --color-primary-dark: /* Darker shade */;
-    --color-secondary: /* Secondary color */;
-    --color-text: /* Main text color */;
-    --color-text-light: /* Lighter text */;
-    --color-background: /* Page background */;
-    --color-background-alt: /* Alternate background */;
-    --color-border: /* Border color */;
+    --color-primary: #2563eb;/* Your primary color */;
+    --color-primary-dark: #1d4ed8;/* Darker shade */;
+    --color-secondary: #f97316;/* Secondary color */;
+    --color-text: #1f2937;/* Main text color */;
+    --color-text-light: #6b7280;/* Lighter text */;
+    --color-background: #f3f4f6;/* Page background */;
+    --color-background-alt: #f3f4f6;/* Alternate background */;
+    --color-border: #e5e7eb;/* Border color */;
 
     /* Typography - TODO: Define your font sizes */
-    --font-family: /* Your font stack */;
-    --font-size-base: /* Base size, e.g., 16px */;
-    --font-size-sm: /* Small text */;
-    --font-size-lg: /* Large text */;
-    --font-size-xl: /* Extra large */;
-    --font-size-2xl: /* Headings */;
-    --font-size-3xl: /* Large headings */;
+    --font-family: 'Inter', sans-serif;/* Your font stack */;
+    --font-size-base: 16px;/* Base size, e.g., 16px */;
+    --font-size-sm: 14px;/* Small text */;
+    --font-size-lg: 18px;/* Large text */;
+    --font-size-xl: 20px;/* Extra large */;
+    --font-size-2xl: 24px;/* Headings */;
+    --font-size-3xl: 40px;/* Large headings */;
 
     /* Spacing - TODO: Define spacing scale */
-    --spacing-xs: /* Extra small */;
-    --spacing-sm: /* Small */;
-    --spacing-md: /* Medium */;
-    --spacing-lg: /* Large */;
-    --spacing-xl: /* Extra large */;
+    --spacing-xs: 0.25rem;/* Extra small */;
+    --spacing-sm: 0.5rem;/* Small */;
+    --spacing-md: 1rem;/* Medium */;
+    --spacing-lg: 1.5rem;/* Large */;
+    --spacing-xl: 2rem;/* Extra large */;
 
     /* Layout */
-    --max-width: /* Container max-width */;
-    --border-radius: /* Default border radius */;
+    --max-width: 1200px;/* Container max-width */;
+    --border-radius: 8px;/* Default border radius */;
 
     /* Transitions */
-    --transition-fast: /* Fast transition */;
-    --transition-normal: /* Normal transition */;
+    --transition-fast: 0.2s ease-in-out;/* Fast transition */;
+    --transition-normal: 0.3s ease-in-out;/* Normal transition */;
 }
 
 /* ============================================================
@@ -63,30 +63,48 @@ DO NOT use CSS frameworks (Bootstrap, Tailwind, etc.)
 *::before,
 *::after {
     /* TODO: box-sizing, margin, padding reset */
+     box-sizing: border-box;
+     margin:0;
+     padding:0;
 }
 
 html {
     /* TODO: scroll-behavior, font-size */
+    scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 body {
     /* TODO: font-family, color, background-color, line-height */
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color:var(--color-text);
+    background-color: blue !important;
+    line-height: 1.6;
 }
 
 img {
     /* TODO: Make images responsive */
+    max-width: 100%;
+    height: auto;
+    display:block;
 }
 
 a {
     /* TODO: Link styles */
+    text-decoration: none;
+    color:var(--color-primary);
+    transition: var(--transition-fast);
 }
 
 a:hover {
     /* TODO: Link hover state */
+    color: var(--color-primary-dark);
 }
 
 ul {
     /* TODO: List reset */
+    list-style: none;
 }
 
 /* ============================================================
