@@ -24,7 +24,7 @@ DO NOT use CSS frameworks (Bootstrap, Tailwind, etc.)
     --color-primary: #2563eb;/* Your primary color */;
     --color-primary-dark: #1d4ed8;/* Darker shade */;
     --color-secondary: #1d4ed8;/* Secondary color */;
-    --color-text: #1f2937;/* Main text color */;
+    --color-text: #04070c;/* Main text color */;
     --color-text-light: #6b7280;/* Lighter text */;
     --color-background: #f3f4f6;/* Page background */;
     --color-background-alt: #f3f4f6;/* Alternate background */;
@@ -225,25 +225,54 @@ ul {
     color: #333;
 }
 
+
 .nav__menu {
     /* TODO: Style navigation menu
        Mobile: Stack vertically or hide
        Desktop: Horizontal with Flexbox */
         display: flex;
         gap: 20px;
+        flex-direction: row;
+        list-style: none;
+}
+.nav-links li{
+    display: inline-block;
 }
 
+@media (min-width: 768px) {
+    .nav__menu {
+        display: flex;
+        flex-direction: row;
+    }
+}
 .nav__menu a {
     /* TODO: Navigation link styles */
     text-decoration: none;
     font-size: 16px;
-    color:#333;
+    color:#0f0d0d;
     transition: color 0.3s;;
 }
 
 .nav__menu a:hover {
     /* TODO: Navigation link hover */
     color: #06257a;
+}
+.nav-links a {
+    position: relative;
+    padding-bottom: 5px;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #06257a;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover::after{
+    width: 100%;
 }
 
 /* ============================================================
@@ -271,7 +300,7 @@ ul {
 .hero__tagline {
     /* TODO: Style tagline */
     font-size: 20px;
-    color: #666;
+    color: #0c0b0b;
 }
 
 /* ============================================================
@@ -564,6 +593,23 @@ ul {
        - Adjust typography sizes
        - Change layouts (Grid columns, Flexbox directions)
        - Adjust spacing */
+       body{
+        font-size: 18px;
+       }
+       .nav-links{
+        flex-direction: none;
+        justify-content: center;
+        gap: 20px;
+       }
+       .project-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+       }
+       section { 
+        padding: 40px;
+       }
 }
 
 /* Desktop (1024px and up) */
@@ -572,14 +618,62 @@ ul {
        - Further layout adjustments
        - Larger typography
        - More spacing */
+       body{ font-size: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .project-grid{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    section{
+        padding: 60px;
+    }
+
 }
 
 /* Large Desktop (1200px and up) */
 @media (min-width: 1200px) {
     /* TODO: Add large desktop styles (optional) */
+    .container{
+        max-width: 1200;
+        margin: auto;
+    }
+    .projects-grid{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
 }
+
+@media print{
+    nav,
+    footer,
+    .menu-icon{
+        display: none;
+    }
+    body{
+        font-size: 12px;
+        color: black;
+        background: white;
+    }
+}
+
 
 /* ============================================================
    ADDITIONAL STYLES
    TODO: Add any additional styles you need
    ============================================================ */
+   body.dark-mode {
+    background-color: #111;
+    color: white;}
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    section {
+        animation: fadeIn 1s ease-in-out;
+    }
