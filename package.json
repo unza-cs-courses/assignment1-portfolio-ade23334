@@ -1,0 +1,24 @@
+{
+  "name": "assignment1-portfolio-ade23334",
+  "version": "1.0.0",
+  "description": "**Name:** [ADESS PHIRI]\r **Student ID:** [2022088697]\r **Design Theme:** A modern minimalist portfolio design focused on readability,simple navigation and respnsiveness layouts across different screen sizes.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unza-cs-courses/assignment1-portfolio-ade23334.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/unza-cs-courses/assignment1-portfolio-ade23334/issues"
+  },
+  "homepage": "https://github.com/unza-cs-courses/assignment1-portfolio-ade23334#readme"
+}
