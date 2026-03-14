@@ -2,8 +2,8 @@
 
 ## Your Information
 
-**Name:** [ADESS PHIRI]
-**Student ID:** [2022088697]
+**Name:** ADESS PHIRI
+**Student ID:** 2022088697
 **Design Theme:** A modern minimalist portfolio design focused on readability,simple navigation and respnsiveness layouts across different screen sizes.
 
 ### CSS Techniques Used
@@ -40,5 +40,5 @@ _____________
 -Screenshots:
 1. Captured using Chrome Devtools Toobar
 
----
+
 
